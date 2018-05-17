@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="events-dates.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Events/dates</a>
+    <a href="marching-band.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Marching band</a>
+    <a href=concert-band.html class="w3-bar-item w3-button w3-padding-large w3-hide-small">Concert band</a>
+   <a href="symphonic-band.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Symphonic Band</a>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  
+       
+    </div>
+ 
+  
+    
+   
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Events and Dates</h2>
+   
+      
+      <TABLE BORDER=3 CELLSPACING=3 CELLPADDING=3> 
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>August 2019</B></TD> 
+</TR>
+<TR> 
+<TD COLSPAN="7" ALIGN=center><I>Practices</I></TD>
+</TR>
+
+
+ 
+<TR> 
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+
+<TR> 
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center>1</TD>
+</TR>
+
+<TR> 
+<TD ALIGN=center>2</TD>
+<TD ALIGN=center>3</TD>
+<TD ALIGN=center>4</TD>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+<TD ALIGN=center>7</TD>
+<TD ALIGN=center>8</TD>
+</TR>
+
+<TR> 
+<TD ALIGN=center>9</TD>
+<TD ALIGN=center>10</TD>
+<TD ALIGN=center>11</TD>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+<TD ALIGN=center>14</TD>
+<TD ALIGN=center>15</TD>
+</TR>
+
+<TR> 
+<TD ALIGN=center>16</TD>
+<TD ALIGN=center>17</TD>
+<TD ALIGN=center>18</TD>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+<TD ALIGN=center>21</TD>
+<TD ALIGN=center>22</TD>
+</TR>
+
+<TR> 
+<TD ALIGN=center>23</TD>
+<TD ALIGN=center>24</TD>
+<TD ALIGN=center>25</TD>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+<TD ALIGN=center>28</TD>
+<TD ALIGN=center>29</TD>
+</TR>
+
+<TR> 
+<TD ALIGN=center>30</TD>
+<TD ALIGN=center>31</TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+<TD ALIGN=center></TD>
+
+</TR>
+
+</TABLE>
+      
+      
+  
+   
+    </div>
+  
+  
+  
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+
+</body>
+</html>
